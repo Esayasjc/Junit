@@ -33,11 +33,11 @@ public class ArrayNumber {
         
         // max value found 
         
-        Min min = new Min();
-        min.Min(number);
-        
-        Max max = new Max();
-        max.Max(number);
+//        Min min = new Min();
+//        min.Min(2);
+//        
+//        Max max = new Max();
+//        max.Max(1);
         
         
         }

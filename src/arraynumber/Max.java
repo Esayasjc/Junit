@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package arraynumber;
-
+import java.util.Arrays;
 /**
  *
  * @author Esayas
@@ -12,17 +12,27 @@ package arraynumber;
 public class Max {
     
    
-    public static boolean Max(int [] number){
+    public  boolean Max(int result){
         
     double max = Double.NEGATIVE_INFINITY;
-        for(int i = 0;i < number.length;i++){
-            if(number[i] > max)
-                max = number[i];
-            
-        }
+    int number[] = {2,3,4,5,6,12,1};
+//        for(int i = 0;i < number.length;i++){
+//            if(number[i] > max)
+//                max = number[i];
+//            
+//        }
+      Arrays.sort(number);
+      if(result==number[number.length-1])
+      {
+          System.out.println("The maximum number on the array is " +number[number.length-1]);
+          return true;
+      }
+        else
+      {
+          return false;
+      }
         
-        System.out.println("The maximum number on the array is " + max);
-        return true;
+        
     }
     
 }

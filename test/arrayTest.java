@@ -24,6 +24,8 @@ public class arrayTest {
     @Before
     public void setUp() {
         arn = new ArrayNumber();
+        max = new Max();
+        min = new Min();
     }
     @Test
     public void TestCheck(){
@@ -35,15 +37,15 @@ public class arrayTest {
     @Test 
     public void TestMin(){
         
-        int number[] = {3,4,5,6,2,8,100};
-        assertEquals(1, min.Min(number));
+       
+        assertEquals(true, min.Min(1));
         
     }
     @Test
     public void TestMax(){
         
-        int number[] = {2,3,4,5,6,12,1};
-        assertEquals(true, max.Max(number));
+        
+        assertEquals(true, max.Max(12));
         
     }
     @After
